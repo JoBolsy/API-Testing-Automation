@@ -8,7 +8,7 @@
 | Pass Rate | 92.9% |
 
 ## 2. Test Execution Evidence
-![alt text](Test Execution Evidence.png)
+![alt text](<Test Execution Evidence.png>)
 
 ## 3. Defect Summary
 | Bug ID | Bug Title | Related Test Case | Status
