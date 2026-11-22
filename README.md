@@ -28,20 +28,21 @@ This project demonstrates:
 
 | # | Request | Method | Endpoint | Service |
 | --- | --- | --- | --- | --- |
-| 1 | Get All Users (page 2) | GET | `/api/users?page=2` | ReqRes |
-| 2 | Get Single User | GET | `/api/users/2` | ReqRes |
-| 3 | Get Nonexistent User | GET | `/api/users/999` | ReqRes |
-| 4 | Create User | POST | `/api/users` | ReqRes |
-| 5 | Create User with Empty Body | POST | `/api/users` | ReqRes |
-| 6 | Update User | PUT | `/api/users/{{userId}}` | ReqRes |
-| 7 | Partially Update User | PATCH | `/api/users/{{userId}}` | ReqRes |
-| 8 | Delete User | DELETE | `/api/users/{{userId}}` | ReqRes |
-| 9 | Register | POST | `/api/register` | ReqRes |
-| 10 | Register Without Password | POST | `/api/register` | ReqRes |
-| 11 | Login and Extract Token | POST | `/auth/login` | DummyJSON |
-| 12 | Login Without Password | POST | `/auth/login` | DummyJSON |
-| 13 | Get Current Auth User | GET | `/auth/me` | DummyJSON |
-| 14 | Get Current Auth User with Invalid Token | GET | `/auth/me` | DummyJSON |
+| 1 | Get All Users | GET | `/api/users` | ReqRes |
+| 2 | Get All Users (page 2) | GET | `/api/users?page=2` | ReqRes |
+| 3 | Get Single User | GET | `/api/users/2` | ReqRes |
+| 4 | Get Nonexistent User | GET | `/api/users/999` | ReqRes |
+| 5 | Create User | POST | `/api/users` | ReqRes |
+| 6 | Create User with Empty Body | POST | `/api/users` | ReqRes |
+| 7 | Update User | PUT | `/api/users/{{userId}}` | ReqRes |
+| 8 | Partially Update User | PATCH | `/api/users/{{userId}}` | ReqRes |
+| 9 | Delete User | DELETE | `/api/users/{{userId}}` | ReqRes |
+| 10 | Register | POST | `/api/register` | ReqRes |
+| 11 | Register Without Password | POST | `/api/register` | ReqRes |
+| 12 | Login and Extract Token | POST | `/auth/login` | DummyJSON |
+| 13 | Login Without Password | POST | `/auth/login` | DummyJSON |
+| 14 | Get Current Auth User | GET | `/auth/me` | DummyJSON |
+| 15 | Get Current Auth User with Invalid Token | GET | `/auth/me` | DummyJSON |
 
 ## Setup and Execution
 
@@ -88,20 +89,20 @@ pm.environment.set("token", response.accessToken);
 
 ## Test Execution Results
 
-The recorded run executed **14 requests**, with **16 Postman assertions** overall.
+The recorded run executed **15 requests**, with **17 Postman assertions** overall.
 
 | Metric | Result |
 | --- | ---: |
-| API requests / documented test cases | 14 |
-| Requests with all assertions passing | 13 |
+| API requests / documented test cases | 15 |
+| Requests with all assertions passing | 14 |
 | Requests with a failing assertion | 1 |
-| Total assertions | 16 |
-| Passed assertions | 15 |
+| Total assertions | 17 |
+| Passed assertions | 16 |
 | Failed assertions | 1 |
-| Request-level pass rate | 92.9% |
+| Request-level pass rate | 94.1% |
 | Execution errors reported by runner | 0 |
-| Run duration | 5.88 seconds |
-| Average response time | 324 ms |
+| Run duration | 6 seconds |
+| Average response time | 316 ms |
 
 ![Postman Collection Runner test execution results](Test%20Execution%20Evidence.png)
 
